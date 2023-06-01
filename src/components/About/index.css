@@ -1,0 +1,43 @@
+.about-container {
+  height: 70vh;
+  width: 85vw;
+  display: flex;
+  margin: 0 5vw 0 10vw;
+}
+
+.about-title {
+  font-size: 2.7em;
+  border: solid;
+  border-width: 0 0 2px 0;
+  color: var(--primary-dark);
+  width: 10vw;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 60vw;
+  text-indent: 40px;
+  font-weight: bold;
+  overflow: clip;
+}
+
+.body-paragraph {
+  user-select: none;
+  color: var(--secondary-dark);
+}
+
+.image {
+  height: 24rem
+}
+
+.image-container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  user-select: none;
+}

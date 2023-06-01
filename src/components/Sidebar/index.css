@@ -1,0 +1,27 @@
+#sidebar-container {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+#vl {
+  box-sizing: border-box;
+  border-left: 1px solid var(--primary-light);
+  height: 10vh;
+  margin-left: 7vh;
+  min-width: 7vh;
+}
+
+.link-achor {
+  height: 5.2vh;
+  width: 5.2vh;
+}
+
+.sidebar-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.5vh;
+  height: 4vh;
+  margin-bottom: 3vh;
+}

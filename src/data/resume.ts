@@ -1,0 +1,6 @@
+const resumePoints = [
+  {companyName: 'NomiSo', location: 'Denver, CO', role: 'Software Engineer', summary: 'Full stack SWE for DISH Network Products team - responsible for updating, improving, and maintaining DISH web apps', bullets: ['Employ contemporary front-end languages to create intuitive, aesthetically compelling UIs that promote engagement', 'Continuously improve technical functionality and quality by administering and undertaking peer code reviews', 'Build front-end components and RESTful APIs using React, Node, and Express']},
+  {companyName: 'Hack Reactor', location: 'Remote, US', summary: 'Nation\'s top-ranking coding boot camp with an intensive curriculum designed to build curious learners into real-world software engineers', bullets: ['Developed deep knowledge and understanding of web development through a 900+ hour curriculum', 'Built applications using a wide range of technologies including Javascript (ES6+), Node.js, React, Express, MongoDB, and PostgreSQL', 'Collaborated with other like-minded individuals in making projects working in phases with an agile workflow']},
+]
+
+export default resumePoints

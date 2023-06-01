@@ -1,0 +1,18 @@
+.navbar-container {
+  position: webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  width: 100vw;
+  background-color: var(--secondary-light)
+}
+
+.navbar-link {
+  width: 10vw;
+  color: var(--secondary-dark);
+  font-weight: bold;
+}

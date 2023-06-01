@@ -1,0 +1,23 @@
+:root {
+  --primary-dark: #000000;
+  --secondary-dark: #14213d;
+  --accent-color: #fca311;
+  --secondary--accent: #22577a;
+  --primary-light: #ffffff;
+  --secondary-light: #e5e5e5;
+
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 500;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--primary-light);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+
