@@ -1,39 +1,56 @@
 import './index.css'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const Navbar = () => {
 
-  const [fillerDivFlag, setFillerDivFlag] = useState(false)
 
   useEffect(() => {
-    const navbar = document.getElementById('navbar-container');
 
+    const navbar = document.getElementById('navbar-container');
     const sticky = navbar?.offsetTop;
+    let fillerDivFlag = false;
 
     const addOrRemoveSticky = () => {
       if (sticky && window.scrollY >= sticky) {
-        navbar.classList.add('sticky')
-        setFillerDivFlag(true)
+        if (!navbar.classList.contains('sticky')) {
+          navbar.classList.add('sticky');
+          setFillerDivFlag(true);
+        }
       } else {
-        navbar?.classList.remove('sticky');
-        setFillerDivFlag(false)
+        if (navbar.classList.contains('sticky')) {
+          navbar.classList.remove('sticky');
+          setFillerDivFlag(false);
+        }
       }
     }
 
-    window.addEventListener('scroll', () => {addOrRemoveSticky()})
+    const setFillerDivFlag = (flag: boolean) => {
+      if (flag && !fillerDivFlag) {
+        const fillerDiv = document.createElement('div');
+        fillerDiv.style.height = '7vh';
+        navbar.insertAdjacentElement('afterend', fillerDiv);
+      } else if (!flag && fillerDivFlag) {
+        const fillerDiv = navbar.nextElementSibling;
+        fillerDiv.parentNode.removeChild(fillerDiv);
+      }
+      fillerDivFlag = flag;
+    }
 
-    return window.removeEventListener('scroll', () => {addOrRemoveSticky()})
+
+    window.addEventListener('scroll', () => { addOrRemoveSticky() })
+
+    return window.removeEventListener('scroll', () => { addOrRemoveSticky() })
 
   }, [])
 
   return (
     <>
-    <div id='navbar-container'>
-      <div className='navbar-link' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</div>
-      <div className='navbar-link' onClick={() => window.scrollTo({ top: 725, behavior: 'smooth' })}>About</div>
-      <div className='navbar-link' onClick={() => window.scrollTo({ top: 1275, behavior: 'smooth' })}>Projects</div>
-      <div className='navbar-link' onClick={() => window.scrollTo({ top: 1827, behavior: 'smooth' })}>Contact</div>
-    </div>
+      <div id='navbar-container'>
+        <div className='navbar-link' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</div>
+        <div className='navbar-link' onClick={() => window.scrollTo({ top: 725, behavior: 'smooth' })}>About</div>
+        <div className='navbar-link' onClick={() => window.scrollTo({ top: 1275, behavior: 'smooth' })}>Projects</div>
+        <div className='navbar-link' onClick={() => window.scrollTo({ top: 1827, behavior: 'smooth' })}>Contact</div>
+      </div>
     </>
   )
 }
