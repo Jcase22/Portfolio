@@ -73,7 +73,11 @@ const Home = () => {
           <h1 className='main-title'>Hello, I'm&nbsp;</h1>
           <h1 className='main-title-name'>Justin Case</h1>
         </div>
-        <h3 className='sub-title'>I'm a software engineer</h3>
+        {window.innerWidth <= 645 ?
+          null
+          :
+          (<h3 className='subtitle'>I'm a software engineer</h3>)
+        }
       </div>
     </div>
   )
