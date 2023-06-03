@@ -15,4 +15,5 @@
   width: 10vw;
   color: var(--secondary-dark);
   font-weight: bold;
+  user-select: none;
 }

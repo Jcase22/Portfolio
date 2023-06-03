@@ -5,14 +5,6 @@
   margin: 0 5vw 0 10vw;
 }
 
-.about-title {
-  font-size: 2.7em;
-  border: solid;
-  border-width: 0 0 2px 0;
-  color: var(--primary-dark);
-  width: 10vw;
-}
-
 .body-container {
   display: flex;
   flex-direction: column;

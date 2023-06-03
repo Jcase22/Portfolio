@@ -7,7 +7,7 @@
 #vl {
   box-sizing: border-box;
   border-left: 1px solid var(--primary-light);
-  height: 10vh;
+  height: 8vh;
   margin-left: 7vh;
   min-width: 7vh;
 }
