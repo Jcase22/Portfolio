@@ -20,7 +20,6 @@ const App = () => {
   return (
     <div className='app-container'>
       {innerWidth >= 1190 ? (<Sidebar />) : (null)}
-      <Sidebar />
       <Home />
       <Navbar />
       <About />
