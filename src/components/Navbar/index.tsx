@@ -10,14 +10,12 @@ const Navbar = () => {
 
     const sticky = navbar?.offsetTop;
 
-    console.log(fillerDivFlagRef)
-
     const addOrRemoveSticky = () => {
       if (sticky && window.scrollY >= sticky) {
-        navbar.classList.add('sticky', 'content')
+        navbar.classList.add('sticky')
         fillerDivFlagRef.current = true
       } else {
-        navbar?.classList.remove('sticky', 'content');
+        navbar?.classList.remove('sticky');
         fillerDivFlagRef.current = false
       }
     }
@@ -27,8 +25,6 @@ const Navbar = () => {
     return window.removeEventListener('scroll', () => {addOrRemoveSticky()})
 
   }, [])
-
-
 
   return (
     <>
