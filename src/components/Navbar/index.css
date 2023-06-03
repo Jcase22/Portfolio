@@ -1,6 +1,4 @@
-.navbar-container {
-  position: webkit-sticky;
-  position: sticky;
+#navbar-container {
   top: 0px;
   display: flex;
   flex-direction: row;
@@ -9,6 +7,20 @@
   height: 7vh;
   width: 100vw;
   background-color: var(--secondary-light)
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .navbar-link {
