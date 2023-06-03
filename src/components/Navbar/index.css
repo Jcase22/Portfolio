@@ -15,6 +15,10 @@
   width: 100%;
 }
 
+.filler-div {
+  height: 14vh;
+}
+
 .navbar-link {
   width: 10vw;
   color: var(--secondary-dark);

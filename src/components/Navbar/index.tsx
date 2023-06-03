@@ -1,9 +1,9 @@
 import './index.css'
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
 
-  const fillerDivFlagRef = useRef(false)
+  const [fillerDivFlag, setFillerDivFlag] = useState(false)
 
   useEffect(() => {
     const navbar = document.getElementById('navbar-container');
@@ -13,10 +13,10 @@ const Navbar = () => {
     const addOrRemoveSticky = () => {
       if (sticky && window.scrollY >= sticky) {
         navbar.classList.add('sticky')
-        fillerDivFlagRef.current = true
+        setFillerDivFlag(true)
       } else {
         navbar?.classList.remove('sticky');
-        fillerDivFlagRef.current = false
+        setFillerDivFlag(false)
       }
     }
 
