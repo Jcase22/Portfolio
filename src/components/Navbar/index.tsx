@@ -17,7 +17,7 @@ const Navbar = () => {
           setFillerDivFlag(true);
         }
       } else {
-        if (navbar.classList.contains('sticky')) {
+        if (navbar?.classList.contains('sticky')) {
           navbar.classList.remove('sticky');
           setFillerDivFlag(false);
         }
@@ -28,10 +28,10 @@ const Navbar = () => {
       if (flag && !fillerDivFlag) {
         const fillerDiv = document.createElement('div');
         fillerDiv.style.height = '7vh';
-        navbar.insertAdjacentElement('afterend', fillerDiv);
+        navbar?.insertAdjacentElement('afterend', fillerDiv);
       } else if (!flag && fillerDivFlag) {
-        const fillerDiv = navbar.nextElementSibling;
-        fillerDiv.parentNode.removeChild(fillerDiv);
+        const fillerDiv = navbar?.nextElementSibling;
+        fillerDiv?.parentNode?.removeChild(fillerDiv);
       }
       fillerDivFlag = flag;
     }

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
@@ -66,7 +67,7 @@ const Home = () => {
         className='particle'
         init={particlesInit}
         loaded={particlesLoaded}
-        options={options}
+        options={options as any}
       />
       <div className='title-container'>
         <div className='main-title-container'>
