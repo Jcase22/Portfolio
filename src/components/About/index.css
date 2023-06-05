@@ -13,7 +13,6 @@
   width: 60vw;
   text-indent: 40px;
   font-weight: bold;
-  overflow: clip;
 }
 
 .body-paragraph {
@@ -32,4 +31,20 @@
   justify-content: center;
   width: 40vw;
   user-select: none;
+}
+
+@media(max-width: 830px) {
+  .about-container {
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .image {
+    height: 22rem;
+  }
+
+  .body-paragraph {
+    margin-bottom: 5vh;
+  }
 }

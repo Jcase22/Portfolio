@@ -18,13 +18,14 @@
   flex-direction: row;
 }
 
-#company-name {
+#college-name {
   border: solid;
   border-width: 0 0 2px 0;
   height: 3.6vh;
   margin-top: 1vh;
   margin-left: 1vh;
   margin-bottom:  0.7vh;
+  color: var(--secondary-dark);
 }
 
 .content-container {
@@ -32,11 +33,29 @@
   margin-top: 1vw;
 }
 
-#location {
+#college-location {
   margin-top: 2.5vh;
   margin-left: 1vh;
+  color: var(--secondary-dark);
 }
 
-#summary {
+#college-major {
+  min-height: 4vh;
+  margin-top: 1vh;
   margin-left: 1vh;
+  margin-bottom:  1vh;
+  color: var(--secondary-dark);
+}
+
+@media(max-width: 643px) {
+  #college-name {
+    border: none;
+    margin-bottom: 4vh;
+  }
+  #college-location {
+    color: var(--secondary-light);
+  }
+  #college-major {
+    font-size: 18px;
+  }
 }

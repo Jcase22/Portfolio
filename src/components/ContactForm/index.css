@@ -21,6 +21,13 @@
   font-weight: bold;
 }
 
+@media(max-width: 820px) {
+  .section-subtitle {
+    width: 65vw;
+    text-align: center;
+  }
+}
+
 .form-container {
   height: 50vh;
   display: flex;
