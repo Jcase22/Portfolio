@@ -8,7 +8,7 @@ const About = () => {
       <div className="about-container">
         <div className='body-container'>
 
-          <div className='body-paragraph'>My name is Justin Case and I am a fullstack software engineer. I have been building websites for three years and enjoy working on them both professionally and as a hobby.  My interest in development began during COVID where my course as a finance student was altered and I began learning to code as a way to destress.  Over the course of several months I learned Javascript, HTML, and CSS and soon after began building my own responsive websites.</div>
+          <div className='body-paragraph'>My interest in website development started during COVID. Despite being a finance major during undergrad, I took on coding as a way to destress and quickly found myself practicing more and more. Over the course of several months I taught myself Javascript, HTML, and CSS. Then, I used those skills to build my own responsive websites. What originated as a hobby to pass the time eventually developed into a newfound passion that I decided to change the course of my professional career to pursue.</div>
 
           <div className='body-paragraph'>My passion for web development led me to enroll in Hack Reactor, the nations leading coding boot camp, where I learned the ins and out of web development and honed the finer points of my craft.  During my time at Hack Reactor I worked with React, Redux, and Node.js.  These technologies gave me the resources needed to build full-scale modern websites with working back-end components.</div>
 

@@ -10,7 +10,7 @@ const Sidebar = () => {
     const githubLogo = document.getElementById('github')
     const vertLine = document.getElementById('vl')
     const firstScrollThreshold = 100;
-    const secondScrollThreshold = 2000;
+    const secondScrollThreshold = 2150;
 
     if (window.scrollY > firstScrollThreshold && linkedInLogo && vertLine && githubLogo) {
       linkedInLogo.style.fill = '#14213d'
