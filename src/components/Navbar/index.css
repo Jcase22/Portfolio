@@ -3,6 +3,7 @@
   height: 7vh;
   width: 100vw;
   background-color: var(--secondary-light);
+  z-index: 5;
 }
 
 .link-container {

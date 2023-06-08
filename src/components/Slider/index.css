@@ -1,0 +1,8 @@
+.slider-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-light);
+  box-shadow: 0 0 5px 10px var(--secondary-light);
+  margin: 5vh 0 5vh 0;
+}

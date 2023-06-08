@@ -13,7 +13,7 @@ const Slider = () => {
 
   return (
     <div className='slider-container'>
-      <Marquee>
+      <Marquee speed={30}>
         <Javascript />
         <Typescript />
         <React />
