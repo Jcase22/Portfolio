@@ -5,21 +5,29 @@ import { useEffect } from 'react';
 
 const Sidebar = () => {
 
-
   const changeColor = () => {
     const linkedInLogo = document.getElementById('linked-in')
     const githubLogo = document.getElementById('github')
     const vertLine = document.getElementById('vl')
-    const scrollThreshold = 100;
+    const firstScrollThreshold = 100;
+    const secondScrollThreshold = 2000;
 
-    if (window.scrollY > scrollThreshold && linkedInLogo && vertLine && githubLogo) {
+    if (window.scrollY > firstScrollThreshold && linkedInLogo && vertLine && githubLogo) {
       linkedInLogo.style.fill = '#14213d'
       githubLogo.style.fill = '#14213d'
       vertLine.style.borderColor = '#14213d'
-    } else if (window.scrollY <= scrollThreshold && linkedInLogo && vertLine && githubLogo) {
+      vertLine.style.height = '7vh'
+    } else if (window.scrollY <= firstScrollThreshold && linkedInLogo && vertLine && githubLogo) {
       linkedInLogo.style.fill = '#ffffff'
       githubLogo.style.fill = '#ffffff'
       vertLine.style.borderColor = '#ffffff'
+    }
+
+    if (window.scrollY > secondScrollThreshold && linkedInLogo && vertLine && githubLogo) {
+      linkedInLogo.style.fill = '#ffffff'
+      githubLogo.style.fill = '#ffffff'
+      vertLine.style.borderColor = '#ffffff'
+      vertLine.style.height = '5vh'
     }
   }
 

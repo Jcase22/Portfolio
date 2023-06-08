@@ -49,8 +49,8 @@ const Navbar = () => {
         <div className='link-container'>
           <div className='navbar-link' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</div>
           <div className='navbar-link' onClick={() => window.scrollTo({ top: 725, behavior: 'smooth' })}>About</div>
-          <div className='navbar-link' onClick={() => window.scrollTo({ top: 1240, behavior: 'smooth' })}>Timeline</div>
-          <div className='navbar-link' onClick={() => window.scrollTo({ top: 1827, behavior: 'smooth' })}>Contact</div>
+          <div className='navbar-link' onClick={() => window.scrollTo({ top: 1245, behavior: 'smooth' })}>Timeline</div>
+          <div className='navbar-link' onClick={() => window.scrollTo({ top: 2026, behavior: 'smooth' })}>Contact</div>
         </div>
       </div>
     </>

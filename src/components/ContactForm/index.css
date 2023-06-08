@@ -38,7 +38,6 @@
 
 .submit-container {
   width: 60vw;
-  margin: 0vw 10vw;
   display: flex;
   flex-direction : row;
   justify-content: flex-end;
@@ -46,20 +45,20 @@
 
 .input-bar {
   min-width: 60vw;
-  margin: 0 10vw;
   height: 4vh;
   background-color: var(--secondary-light);
   color: var(--primary-dark);
   border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .message-box {
   min-width: 60vw;
-  margin: 0 10vw;
   height: 15vh;
   background-color: var(--secondary-light);
   color: var(--primary-dark);
   border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .submit-button {
@@ -70,4 +69,15 @@
   border-radius: 8px;
   border-color: var(--secondary-light);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label {
+  color: var(--primary-dark);
+  margin-bottom: .25vh;
 }

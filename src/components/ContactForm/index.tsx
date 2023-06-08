@@ -26,11 +26,24 @@ const ContactForm = () => {
 
       <form onSubmit={handleSubmit} className='form-container'>
 
-        <input type="email" value={email} placeholder="Email" name="email" onChange={(e) => { setEmail(e.target.value) }} className='input-bar' />
+        <div className='input-container'>
+          <label className='label'>Email</label>
+          <input type="email" value={email} placeholder="Email" name="email" onChange={(e) => { setEmail(e.target.value) }} className='input-bar' />
+        </div>
 
-        <input type="text" value={subject} placeholder="Subject" name="subject" onChange={(e) => { setSubject(e.target.value) }} className='input-bar' />
+        <div className='input-container'>
+          <label className='label'>Subject</label>
 
-        <textarea value={message} placeholder="Message" name="message" onChange={(e) => { setMessage(e.target.value) }} className='message-box' />
+          <input type="text" value={subject} placeholder="Subject" name="subject" onChange={(e) => { setSubject(e.target.value) }} className='input-bar' />
+        </div>
+
+        <div className='input-container'>
+          <label className='label'>
+            Message
+          </label>
+
+          <textarea value={message} placeholder="Message" name="message" onChange={(e) => { setMessage(e.target.value) }} className='message-box' />
+        </div>
 
         <div className='submit-container'>
           <button type="submit" className='submit-button'>Submit</button>

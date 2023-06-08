@@ -6,6 +6,7 @@ import About from './components/About';
 import Timeline from './components/Timeline';
 import ContactForm from './components/ContactForm';
 import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -19,12 +20,14 @@ const App = () => {
 
   return (
     <div className='app-container'>
-      {innerWidth >= 1190 ? (<Sidebar />) : (null)}
+      {/* {innerWidth >= 1190 ? (<Sidebar />) : (null)} */}
+      <Sidebar />
       <Home />
       <Navbar />
       <About />
       <Timeline />
       <ContactForm />
+      <Footer />
     </div>
   );
 };

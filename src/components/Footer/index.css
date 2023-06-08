@@ -1,0 +1,11 @@
+.footer-container {
+  min-height: 20vh;
+  background-color: var(--secondary-dark);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.tag {
+  margin: 0 1.5vh 1.5vh 0;
+}
