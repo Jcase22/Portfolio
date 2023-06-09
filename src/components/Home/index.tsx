@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import HomeButton from '../HomeButton';
 import './index.css'
 
 const Home = () => {
@@ -79,6 +80,10 @@ const Home = () => {
           :
           (<h3 className='subtitle'>I'm a software engineer</h3>)
         }
+        <div className='home-button-top-container'>
+          <HomeButton buttonText='About' />
+          <HomeButton buttonText='Contact' />
+        </div>
       </div>
     </div>
   )

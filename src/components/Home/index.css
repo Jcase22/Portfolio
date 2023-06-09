@@ -5,6 +5,12 @@
   user-select: none;
 }
 
+.home-button-top-container {
+  display: flex;
+  justify-content: space-around;
+  width: 40vw;
+}
+
 .particle {
   z-index: -1;
   position: absolute;
