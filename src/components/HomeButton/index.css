@@ -5,6 +5,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s;
+}
+
+.home-button-container:hover {
+  animation: color-transition 0.55s forwards;
+}
+
+@keyframes color-transition {
+  0% {
+    background-color: none;
+  }
+
+  100% {
+    background-color:  var(--accent-color);
+  }
 }
 
 .fade-in {
