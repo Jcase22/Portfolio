@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -56,6 +56,17 @@ const Home = () => {
     },
     detectRetina: true,
   }
+
+  useEffect(() => {
+    const homeButton = document.querySelectorAll('.fade-in')
+
+    for (let i = 0; i < homeButton.length; i += 1) {
+
+      const currentButton = homeButton[i]
+
+      setTimeout(() => { currentButton.classList.add('fade-in-visible') }, i * 100)
+    }
+  }, [])
 
   const particlesLoaded = useCallback(async (container: Container | undefined) => {
     await console.log(container);

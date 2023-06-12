@@ -9,9 +9,11 @@
 
 .fade-in {
   opacity: 0;
-  transition: opacity 1s;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .fade-in-visible {
   opacity: 1;
+  transform: translateX(0);
 }
