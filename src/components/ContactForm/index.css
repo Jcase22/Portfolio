@@ -50,6 +50,7 @@
   color: var(--primary-dark);
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
 }
 
 .message-box {
@@ -59,6 +60,7 @@
   color: var(--primary-dark);
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
 }
 
 .submit-button {
@@ -69,6 +71,7 @@
   border-radius: 8px;
   border-color: var(--secondary-light);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
 }
 
 .input-container {
@@ -77,7 +80,7 @@
   align-items: flex-start;
 }
 
-.label {
+.input-label {
   color: var(--primary-dark);
   margin-bottom: .25vh;
 }

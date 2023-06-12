@@ -27,18 +27,18 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit} className='form-container'>
 
         <div className='input-container'>
-          <label className='label'>Email</label>
+          <label className='input-label'>Email</label>
           <input type="email" value={email} placeholder="Email" name="email" onChange={(e) => { setEmail(e.target.value) }} className='input-bar' />
         </div>
 
         <div className='input-container'>
-          <label className='label'>Subject</label>
+          <label className='input-label'>Subject</label>
 
           <input type="text" value={subject} placeholder="Subject" name="subject" onChange={(e) => { setSubject(e.target.value) }} className='input-bar' />
         </div>
 
         <div className='input-container'>
-          <label className='label'>
+          <label className='input-label'>
             Message
           </label>
 
