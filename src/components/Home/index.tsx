@@ -92,8 +92,8 @@ const Home = () => {
           (<h3 className='subtitle'>I'm a software engineer</h3>)
         }
         <div className='home-button-top-container'>
-          <HomeButton buttonText='About' />
-          <HomeButton buttonText='Contact' />
+          <HomeButton buttonText='About Me' />
+          <HomeButton buttonText='Contact Me' />
         </div>
       </div>
     </div>

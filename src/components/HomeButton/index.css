@@ -32,3 +32,12 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+.arrow {
+  margin-left: 1.25vw;
+  transition: transform 0.3s;
+}
+
+.home-button-container:hover .arrow{
+  transform: rotateZ(90deg);
+}
