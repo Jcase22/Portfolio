@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  user-select: none;
 }
 
 .section-title {
@@ -83,4 +84,5 @@
 .input-label {
   color: var(--primary-dark);
   margin-bottom: .25vh;
+  user-select: none;
 }

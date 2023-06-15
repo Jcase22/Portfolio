@@ -5,4 +5,5 @@
   background-color: var(--secondary-light);
   box-shadow: 0 0 5px 10px var(--secondary-light);
   margin: 7.5vh 0 7.5vh 0;
+  user-select: none;
 }
