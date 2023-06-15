@@ -66,7 +66,7 @@ const Home = () => {
 
       setTimeout(() => { currentButton.classList.add('fade-in-visible') }, i * 100)
     }
-  }, [])
+  }, [window.innerWidth])
 
   const particlesLoaded = useCallback(async (container: Container | undefined) => {
     await console.log(container);
@@ -92,8 +92,12 @@ const Home = () => {
           (<h3 className='subtitle'>I'm a software engineer</h3>)
         }
         <div className='home-button-top-container'>
-          <HomeButton buttonText='About Me' />
-          <HomeButton buttonText='Contact Me' />
+          {window.innerWidth <= 645 ? null :
+            <>
+              <HomeButton buttonText='About Me' />
+              <HomeButton buttonText='Contact Me' />
+            </>
+          }
         </div>
       </div>
     </div>
