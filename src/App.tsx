@@ -23,7 +23,7 @@ const App = () => {
     <div className='app-container'>
       {innerWidth >= 1190 ? (<Sidebar />) : (null)}
       <Home />
-      <Navbar />
+      {innerWidth <= 645 ? null : <Navbar />}
       <About />
       <Timeline />
       <Slider />
