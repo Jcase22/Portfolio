@@ -1,4 +1,5 @@
 import './index.css'
+import {useEffect, useState} from 'react'
 
 type HomeButtonProps = {
   buttonText: string
@@ -6,11 +7,23 @@ type HomeButtonProps = {
 
 const HomeButton = ({ buttonText }: HomeButtonProps) => {
 
+  const [contactHeight, setContactHeight] = useState(0)
+  const [aboutHeight, setAboutHeight] = useState(0)
+
+  useEffect(() => {
+    const contactElement = document.getElementsByClassName('contact-form-container')
+    const aboutElement = document.getElementsByClassName('about-container')
+
+    setContactHeight(window.pageYOffset + contactElement[0].getBoundingClientRect().top)
+    setAboutHeight(window.pageYOffset + aboutElement[0].getBoundingClientRect().top - 50)
+  }, [])
+
+
   const clickBehavior = () => {
     if (buttonText === 'About Me') {
-      return () => window.scrollTo({ top: 725, behavior: 'smooth' })
+      return () => window.scrollTo({ top: aboutHeight, behavior: 'smooth' })
     } else {
-      return () => window.scrollTo({ top: 2297, behavior: 'smooth' })
+      return () => window.scrollTo({ top: contactHeight, behavior: 'smooth' })
     }
   }
 

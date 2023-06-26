@@ -7,6 +7,15 @@ const Navbar = () => {
   const [timelineHeight, setTimelineHeight] = useState(0)
   const [aboutHeight, setAboutHeight] = useState(0)
 
+  useEffect(() => {
+    const contactElement = document.getElementsByClassName('contact-form-container')
+    const timelineElement = document.getElementsByClassName('timeline-container')
+    const aboutElement = document.getElementsByClassName('about-container')
+
+    setContactHeight(window.pageYOffset + contactElement[0].getBoundingClientRect().top)
+    setTimelineHeight(window.pageYOffset + timelineElement[0].getBoundingClientRect().top - 35)
+    setAboutHeight(window.pageYOffset + aboutElement[0].getBoundingClientRect().top - 50)
+  }, [])
 
   useEffect(() => {
 
@@ -47,15 +56,6 @@ const Navbar = () => {
 
   }, [])
 
-  useEffect(() => {
-    const contactElement = document.getElementsByClassName('contact-form-container')
-    const timelineElement = document.getElementsByClassName('timeline-container')
-    const aboutElement = document.getElementsByClassName('about-container')
-
-    setContactHeight(window.pageYOffset + contactElement[0].getBoundingClientRect().top)
-    setTimelineHeight(window.pageYOffset + timelineElement[0].getBoundingClientRect().top - 35)
-    setAboutHeight(window.pageYOffset + aboutElement[0].getBoundingClientRect().top - 50)
-  }, [])
 
   return (
     <>
