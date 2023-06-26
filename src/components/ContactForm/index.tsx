@@ -18,7 +18,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className='contact-form-container'>
       <div className='section-title-container'>
         <h1 className='section-title'>Contact</h1>
         <h4 className='section-subtitle'>Want to reach out?  Fill out the form below or contact me via any of my social media platforms</h4>

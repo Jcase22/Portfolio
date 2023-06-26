@@ -1,7 +1,11 @@
 import './index.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
+
+  const [contactHeight, setContactHeight] = useState(0)
+  const [timelineHeight, setTimelineHeight] = useState(0)
+  const [aboutHeight, setAboutHeight] = useState(0)
 
 
   useEffect(() => {
@@ -43,14 +47,24 @@ const Navbar = () => {
 
   }, [])
 
+  useEffect(() => {
+    const contactElement = document.getElementsByClassName('contact-form-container')
+    const timelineElement = document.getElementsByClassName('timeline-container')
+    const aboutElement = document.getElementsByClassName('about-container')
+
+    setContactHeight(window.pageYOffset + contactElement[0].getBoundingClientRect().top)
+    setTimelineHeight(window.pageYOffset + timelineElement[0].getBoundingClientRect().top - 35)
+    setAboutHeight(window.pageYOffset + aboutElement[0].getBoundingClientRect().top - 50)
+  }, [])
+
   return (
     <>
       <div id='navbar-container'>
         <div className='link-container'>
           <div className='navbar-link' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</div>
-          <div className='navbar-link' onClick={() => window.scrollTo({ top: 725, behavior: 'smooth' })}>About</div>
-          <div className='navbar-link' onClick={() => window.scrollTo({ top: 1245, behavior: 'smooth' })}>Timeline</div>
-          <div className='navbar-link' onClick={() => window.scrollTo({ top: 2297, behavior: 'smooth' })}>Contact</div>
+          <div className='navbar-link' onClick={() => window.scrollTo({ top: aboutHeight, behavior: 'smooth' })}>About</div>
+          <div className='navbar-link' onClick={() => window.scrollTo({ top: timelineHeight, behavior: 'smooth' })}>Timeline</div>
+          <div className='navbar-link' onClick={() => window.scrollTo({ top: contactHeight, behavior: 'smooth' })}>Contact</div>
         </div>
       </div>
     </>
