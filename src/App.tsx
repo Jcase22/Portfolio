@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Timeline from './components/Timeline';
 import ContactForm from './components/ContactForm';
-import Sidebar from './components/Sidebar';
+// import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import Slider from './components/Slider';
 
@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div className='app-container'>
-      {innerWidth >= 1190 ? (<Sidebar />) : (null)}
+      {/* {innerWidth >= 1190 ? (<Sidebar />) : (null)} */}
       <Home />
       {innerWidth <= 645 ? null : <Navbar />}
       <About />
