@@ -9,14 +9,16 @@ import Node from '../LogoComponents/Node';
 import MySql from '../LogoComponents/MySql';
 import Sass from '../LogoComponents/Sass';
 import Mongo from '../LogoComponents/Mongo';
+import Csharp from '../LogoComponents/Csharp';
 
 const Slider = () => {
 
   return (
     <div className='slider-container'>
-      <Marquee speed={50}>
+      <Marquee speed={35}>
         <Javascript />
         <Typescript />
+        <Csharp />
         <React />
         <Html />
         <Css />
@@ -26,6 +28,7 @@ const Slider = () => {
         <Sass />
         <Javascript />
         <Typescript />
+        <Csharp />
         <React />
         <Html />
         <Css />
