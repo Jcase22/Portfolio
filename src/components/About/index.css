@@ -1,5 +1,5 @@
 .about-container {
-  height: 70vh;
+  height: 600px;
   width: 85vw;
   display: flex;
   margin: 0 5vw 0 10vw;
@@ -25,7 +25,7 @@
 }
 
 .image-container {
-  height: 70vh;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;

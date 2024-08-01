@@ -1,0 +1,31 @@
+.mongo-container {
+  background-color: #4faa41;
+  height: 175px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 5vh;
+}
+
+.white-circle {
+  background-color: var(--primary-light);
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.label {
+  margin-top: 10px;
+  color: var(--primary-light);
+}
