@@ -92,7 +92,7 @@ const Home = () => {
           <div className='subtitle-container'>
             <span className='subtitle-start'>I'm a </span>
             <Typewriter
-              options={{ loop: true, strings: ['software engineer', 'writer', 'yapper', 'creative'], autoStart: true, wrapperClassName: 'typewriter-wrapper', cursorClassName: 'cursor-wrapper' }}
+              options={{ loop: true, strings: ['software engineer', 'musician', 'lacrosse all-star', 'foodie', 'mid-laner', 'googler', 'cool guy'], autoStart: true, wrapperClassName: 'typewriter-wrapper', cursorClassName: 'cursor-wrapper' }}
 
             />
           </div>
