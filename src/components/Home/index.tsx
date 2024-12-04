@@ -4,6 +4,7 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import HomeButton from '../HomeButton';
+import Typewriter from 'typewriter-effect';
 import './index.css'
 
 const Home = () => {
@@ -72,7 +73,6 @@ const Home = () => {
     await console.log(container);
   }, []);
 
-
   return (
     <div className='home-container'>
       <Particles
@@ -89,7 +89,13 @@ const Home = () => {
         {window.innerWidth <= 645 ?
           null
           :
-          (<h3 className='subtitle'>I'm a software engineer</h3>)
+          <div className='subtitle-container'>
+            <span className='subtitle-start'>I'm a </span>
+            <Typewriter
+              options={{ loop: true, strings: ['software engineer', 'writer', 'yapper', 'creative'], autoStart: true, wrapperClassName: 'typewriter-wrapper', cursorClassName: 'cursor-wrapper' }}
+
+            />
+          </div>
         }
         <div className='home-button-top-container'>
           {window.innerWidth <= 645 ? null :

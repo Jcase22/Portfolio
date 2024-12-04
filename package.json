@@ -19,7 +19,8 @@
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.0",
     "react-tsparticles": "^2.9.3",
-    "tsparticles": "^2.9.3"
+    "tsparticles": "^2.9.3",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^20.2.3",
